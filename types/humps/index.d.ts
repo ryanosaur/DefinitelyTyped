@@ -20,6 +20,11 @@ declare namespace humps {
 	function decamelizeKeys(str: Object[], optionsOrProcessor?: OptionOrProcessor): Object[];
 	function depascalizeKeys(str: Object[], optionsOrProcessor?: OptionOrProcessor): Object[];
 
+    function camelizeKeys<T>(str: T, optionsOrProcessor?: OptionOrProcessor): T;
+	function pascalizeKeys<T>(str: T, optionsOrProcessor?: OptionOrProcessor): T;
+	function decamelizeKeys<T>(str: T, optionsOrProcessor?: OptionOrProcessor): T;
+	function depascalizeKeys<T>(str: T, optionsOrProcessor?: OptionOrProcessor): T;
+
 	interface HumpsOptions {
 		separator?: string;
 		split?: RegExp;
